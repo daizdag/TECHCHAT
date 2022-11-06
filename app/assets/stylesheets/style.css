@@ -1,0 +1,33 @@
+header {
+  height: 65px;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1c3667;
+}
+
+.header-title h1{
+  font-size: 23px;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1.8px;
+  color: #ffffff;
+}
+
+.question-btn {
+  height: 32px;
+  width: 80px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-btn a {
+  font-size: 16px;
+  color: #3a3736;
+  text-decoration: none;
+}
