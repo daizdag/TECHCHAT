@@ -31,3 +31,61 @@ header {
   color: #3a3736;
   text-decoration: none;
 }
+
+.question-list {
+  height: calc(100vh - 65px);
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f3;
+}
+
+.questions {
+  width: 700px;
+  margin-top: 90px;
+
+}
+
+.question {
+  height: 100px;
+  display: flex;
+  background-color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.comments {
+  width: 70px;
+  background-color: #1c3667;
+  color: #ffffff;
+  border-radius: 5px 0 0 5px;
+  text-align: center;
+}
+
+.comments-count {
+  margin-top: 20px;
+  height: 38px;
+  font-size: 26px;
+}
+
+.comments p {
+  height: 16px;
+  font-size: 11px;
+}
+
+.question-content {
+  width: calc(700px - 70px);
+  padding: 10px 15px;
+  font-size: 12px;
+  background-color: #ffffff;
+}
+
+.upper-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.question-title {
+  font-size: 14px;
+  width: 500px;
+}
