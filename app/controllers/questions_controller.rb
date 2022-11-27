@@ -13,6 +13,10 @@ class QuestionsController < ApplicationController
     redirect_to action: :index
   end
 
+  def show
+    @question = Question.find(params[:id])
+  end
+
   private
   def question_params
     params.require(:question).permit(:title, :content, :name)
