@@ -14,12 +14,17 @@
   <body>
     <header>
       <div class="header-title">
-        <h1>TechChat</h1>
+        <%= link_to 'TechChat', root_path %> 
       </div>
       <div class="question-btn">
         <a href="/questions/new">質問する</a>
       </div>
     </header>
     <%= yield %>
+    <footer>
+      <div class="footer-title">
+        <%= link_to 'TechChat', root_path %> 
+      </div>
+    </footer>
   </body>
 </html>

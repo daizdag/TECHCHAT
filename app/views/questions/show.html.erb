@@ -1,0 +1,42 @@
+<div class="wrapper">
+  <div class="show">
+    <div class="content-show">
+      <div class="content-show-top">Question</div>
+      <div class="content">
+        <div class="question-title-show">
+          タイトル: <%= @question.title %>
+        </div>
+        <div class="question-content-show">
+          質問内容:<br>   <%= @question.content %>
+        </div>
+        <div class="question-name-show">
+        投稿者名: <%= @question.name %>
+        </div>
+      </div>
+    </div>     
+    <div class="answers-comments">
+      <div class="answer-top">Answer</div>
+      <div class="answers">
+        <% @comments.each do |comment| %>
+          回答:<br><%= comment.comment %><br>
+          投稿者名: <%= comment.name %><br><br>
+        <% end %>
+        <div class="comment-form"><span>comment-form</span>
+          <%= form_with(model: [@question, @comment], local: true) do |form| %>
+            <div class="comment-content">
+              <%= form.text_area :comment, placeholder: "回答する" %>
+            </div>
+            <div class="comment-name">
+              <%= form.text_field :name, placeholder: "ユーザー名" %>
+            </div>
+            <div class='comment-input-submit'>
+              <%= form.submit 'コメント'%>
+            </div>
+          <% end%> 
+        </div>
+      </div>
+    </div> 
+
+    
+  </div>
+</div>
