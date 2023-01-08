@@ -10,11 +10,13 @@ class QuestionsController < ApplicationController
 
   def create
     Question.create(question_params)
-    redirect_to action: :index
+    redirect_to questions_path
   end
 
   def show
     @question = Question.find(params[:id])
+    @comment = Comment.new
+    @comments = @question.comments
   end
 
   private
